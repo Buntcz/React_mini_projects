@@ -1,0 +1,38 @@
+body {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.modalpopup {
+    display: flex;
+    position: absolute;
+    opacity: 0%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    flex-direction: column;
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.modalpopup.active {
+    opacity: 100%;
+}
+
+.modalpopup {
+    transform: translate(-50%, -50%);
+    transition: transform 700ms ease, opacity 700ms ease;
+}
+
+.modalpopup.active{
+    transform: translate(50%, 50%);
+    
+}
