@@ -1,0 +1,51 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.background.dark {
+    background-color: black;
+}
+
+.background.light {
+    background-color: white;
+}
+
+.text.light {
+    color: black;
+}
+
+.text.dark {
+    color: white;
+}
+
+.text {
+    transition: color 700ms ease-in-out;
+}
+
+.background {
+    transition: background-color 700ms ease-in-out;
+}
