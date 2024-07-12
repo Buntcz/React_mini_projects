@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react"
 
 function Timer() {
-    const[time, setTime] = useState(0)
+    const[time, setTime] = useState(1)
 
   let seconds = function() {
        let sToWait = prompt("enter the minutes you want to wait")
